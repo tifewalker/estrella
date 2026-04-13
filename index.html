@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrella — For You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     LOGIN SCREEN
+════════════════════════════════════════ -->
+<div id="login-screen">
+  <div class="login-star-bg"></div>
+  <div class="login-inner">
+
+    <svg class="login-crescent" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 15 A25 25 0 1 0 50 65 A18 18 0 1 1 50 15Z" fill="#d4b483" opacity="0.9"/>
+      <circle cx="62" cy="28" r="3" fill="#d4b483" opacity="0.7"/>
+    </svg>
+
+    <p class="login-prompt">something was made just for you.</p>
+    <p class="login-hint">who are you? ✦</p>
+
+    <div class="login-input-wrap">
+      <input
+        class="login-input"
+        id="login-input"
+        type="text"
+        placeholder="your name..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button class="login-btn" id="login-btn">Enter ✦</button>
+      <p class="login-error-msg" id="login-error">
+        hmm, that doesn't seem right 🌙
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ── STAR BACKGROUND ── -->
+<canvas id="star-canvas"></canvas>
+
+<!-- ── NAV DOTS ── -->
+<div id="nav-dots">
+  <div class="nav-dot active" onclick="scrollTo(0)"></div>
+  <div class="nav-dot" onclick="scrollTo(1)"></div>
+  <div class="nav-dot" onclick="scrollTo(2)"></div>
+  <div class="nav-dot" onclick="scrollTo(3)"></div>
+  <div class="nav-dot" onclick="scrollTo(4)"></div>
+  <div class="nav-dot" onclick="scrollTo(5)"></div>
+  <div class="nav-dot" onclick="scrollTo(6)"></div>
+  <div class="nav-dot" onclick="scrollTo(7)"></div>
+</div>
+
+
+<!-- ════════════════════════════════════════
+     S1 — WELCOME
+════════════════════════════════════════ -->
+<section id="s1">
+  <p class="star-meaning">نجمة &nbsp;·&nbsp; estrella &nbsp;·&nbsp; star</p>
+  <h1 class="star-name">ESTRELLA</h1>
+  <p class="real-names">Eniola &nbsp;·&nbsp; Fifehanmi &nbsp;·&nbsp; Arike &nbsp;·&nbsp; Fatiah</p>
+  <div class="divider"></div>
+  <p class="welcome-poem">
+    Before the world had words for you,<br>
+    the sky already knew your name <br>
+    hung it high, in silver light,<br>
+    and called it beautiful.
+  </p>
+  <p class="scroll-hint">↓ &nbsp; scroll into your story</p>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S2 — FAITH & STRENGTH
+════════════════════════════════════════ -->
+<section id="s2">
+  <div class="crescent-wrap">
+    <svg class="crescent-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 15 A25 25 0 1 0 50 65 A18 18 0 1 1 50 15Z" fill="#d4b483" opacity="0.9"/>
+      <circle cx="62" cy="28" r="3" fill="#d4b483" opacity="0.7"/>
+    </svg>
+  </div>
+
+  <p class="arabic-quote reveal">
+    وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ
+  </p>
+  <p class="arabic-translation reveal">
+    "Do not weaken, do not grieve, you are the highest." &nbsp;— Quran 3:139
+  </p>
+  <p class="strength-text reveal">
+    Fatiah — the one who opens.<br>
+    Eniola — named for honour.<br>
+    You were never ordinary,<br>
+    even before you knew it yourself.<br>
+    You carry your faith like starlight <br>
+    quiet, constant, impossible to extinguish.<br>
+    Every storm you've walked through<br>
+    only proved what I already knew:<br>
+    there is iron woven into your softness.
+  </p>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S3 — YOUR POEMS
+════════════════════════════════════════ -->
+<section id="s3">
+  <p class="section-label">— your poems —</p>
+  <div class="poems-container">
+
+    <!-- ✏️ Poem I — replace with your real poem -->
+    <div class="poem-card reveal">
+      <p class="poem-title">I. &nbsp; Gravity</p>
+      <p class="poem-body">
+        I never planned to look twice <br>
+        but you exist the way the moon exists,<br>
+        effortless, pulling tides in me<br>
+        I didn't know I had.
+      </p>
+    </div>
+
+    <div class="poem-card reveal">
+      <p class="poem-title">II. &nbsp; Her Names</p>
+      <p class="poem-body">
+        Eniola — honour wrapped in breath,<br>
+        a name that means the world gave her wealth<br>
+        before she even knew to ask.<br><br>
+
+        Fifehanmi — God expanded my joy.<br>
+        I believe it.<br>
+        I felt it the day I met her.<br><br>
+
+        Arike — one who is cared for<br>
+        by all who behold her.<br>
+        That one, I've seen myself.<br><br>
+
+        Fatiah — the opening.<br>
+        She walks into a room<br>
+        and something unlocks.<br><br>
+
+        And Estrella — my name for her,<br>
+        the one I whisper when the sky is full <br>
+        because she is all of these things,<br>
+        and she is also my star.
+      </p>
+    </div>
+
+    <!-- Poem III — your birthday poem -->
+    <div class="poem-card reveal">
+      <p class="poem-title">III. &nbsp; Today, You</p>
+      <p class="poem-body">
+        If I could hold a moment still,<br>
+        it would be this one<br>
+        the day the world was given you.<br><br>
+
+        Not just your smile,<br>
+        not just your voice,<br>
+        but the quiet way you make<br>
+        everything feel lighter around you.<br><br>
+
+        You are the kind of warmth<br>
+        people search for in places,<br>
+        not knowing it exists<br>
+        in a person like you.<br><br>
+
+        And today,<br>
+        I don't just celebrate your birth<br>
+        I celebrate the way you found me,<br>
+        and somehow made life softer.<br><br>
+
+        Happy Birthday, my love.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S4 — OUR SONGS
+════════════════════════════════════════ -->
+<section id="s4">
+  <p class="section-label">— our songs —</p>
+
+  <div class="songs-grid reveal">
+
+    <!-- Song 1: Heavens -->
+    <div class="song-card">
+      <p class="song-card-label">we sang this together</p>
+      <div class="song-vinyl"><div class="vinyl-center"></div></div>
+      <h2 class="song-title">Heavens</h2>
+      <p class="song-artist">Tatiana Manaois</p>
+      <p class="song-note">
+        We sang this at the beach.<br>
+        I hope you remember the way<br>
+        the waves kept time for us.
+      </p>
+      <a href="https://open.spotify.com/track/1Wr1dLuynulSKxONPZ4UvY?si=9f4e0d55a04b40bd"
+         target="_blank" class="spotify-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+        </svg>
+        Listen
+      </a>
+    </div>
+
+    <!-- Separator -->
+    <div class="songs-separator"></div>
+
+    <!-- Song 2: Best Part -->
+    <div class="song-card">
+      <p class="song-card-label">dedicated to you</p>
+      <div class="song-vinyl" style="animation-direction:reverse"><div class="vinyl-center"></div></div>
+      <h2 class="song-title">Best Part</h2>
+      <p class="song-artist">Daniel Caesar ft. H.E.R.</p>
+      <p class="song-note">
+        This one is just for you.<br>
+        Because you are, without question,<br>
+        the best part.
+      </p>
+      <a href="https://open.spotify.com/track/4OBZT9EnhYIV17t4pGw7ig?si=f5733e4abb884dc6"
+         target="_blank" class="spotify-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+        </svg>
+        Listen
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S5 — THE BEACH (replaces map)
+════════════════════════════════════════ -->
+<section id="s5">
+  <p class="section-label">— the beach where we sang —</p>
+
+  <div class="beach-photo-frame reveal">
+    <!-- Beach photo — photo_1 is the beautiful beach shot -->
+    <img src="photo_1.jpeg" alt="Estrella at the beach" />
+  </div>
+
+  <span class="beach-wave reveal">🌊</span>
+  <p class="beach-caption reveal">
+    Eyes closed, waves behind you,<br>
+    the whole ocean as your backdrop <br>
+    and still, you were the most beautiful thing there.
+  </p>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S6 — HER GALLERY
+════════════════════════════════════════ -->
+<section id="s6">
+  <p class="section-label">— her universe —</p>
+  <div class="gallery-grid">
+
+    <!-- Large feature -->
+    <div class="gallery-item large" onclick="openMemory({title:'At the shore', text:'Pink florals, ocean breeze, eyes closed like she owns the world. She does.'})">
+      <img src="photo_3.jpeg" alt="Estrella at the beach" />
+      <div class="gallery-caption">She was made for open skies.</div>
+    </div>
+
+    <!-- Horse rider -->
+    <div class="gallery-item" onclick="openMemory({title:'Free', text:'Peace signs and ocean breeze. This is exactly who she is.'})">
+      <img src="photo_2.jpeg" alt="Estrella on horseback" />
+      <div class="gallery-caption">Born free.</div>
+    </div>
+
+    <!-- Green selfie -->
+    <div class="gallery-item" onclick="openMemory({title:'Golden hour', text:'Golden sun, that little pout — effortlessly stunning.'})">
+      <img src="photo_4.jpeg" alt="Estrella selfie" />
+      <div class="gallery-caption">Golden hour belongs to her.</div>
+    </div>
+
+    <!-- Mirror smile -->
+    <div class="gallery-item" onclick="openMemory({title:'That smile', text:'That smile. The one that makes everything feel okay.'})">
+      <img src="photo_5.jpeg" alt="Estrella smiling" />
+      <div class="gallery-caption">Her smile rewrites the sky.</div>
+    </div>
+
+    <!-- Mirror glasses mustard -->
+    <div class="gallery-item" onclick="openMemory({title:'Her look', text:'Glasses, attitude, and gold. She always looks like a whole mood.'})">
+      <img src="photo_6.jpeg" alt="Estrella in yellow" />
+      <div class="gallery-caption">A whole mood, always.</div>
+    </div>
+
+    <!-- White hijab selfie -->
+    <div class="gallery-item tall" onclick="openMemory({title:'Soft light', text:'Soft white light. She glows from the inside.'})">
+      <img src="photo_7.jpeg" alt="Estrella in white hijab" />
+      <div class="gallery-caption">She glows from the inside.</div>
+    </div>
+
+    <!-- Work selfie -->
+    <div class="gallery-item" onclick="openMemory({title:'In her element', text:'Believe in yourself — the wall knew what it was saying.'})">
+      <img src="photo_8.jpeg" alt="Estrella at work" />
+      <div class="gallery-caption">She believes in herself.</div>
+    </div>
+
+    <!-- Red & white doorway -->
+    <div class="gallery-item" onclick="openMemory({title:'Her presence', text:'She steps into a room and something shifts. Every time.'})">
+      <img src="photo_9.jpeg" alt="Estrella in red" />
+      <div class="gallery-caption">She shifts the energy of rooms.</div>
+    </div>
+
+    <!-- Red & white full length -->
+    <div class="gallery-item" onclick="openMemory({title:'Standing tall', text:'White and red and sunshine. She carries herself like royalty.'})">
+      <img src="photo_10.jpeg" alt="Estrella standing" />
+      <div class="gallery-caption">Royalty in every step.</div>
+    </div>
+
+    <!-- Indoors seated red -->
+    <div class="gallery-item" onclick="openMemory({title:'At ease', text:'Relaxed, warm, glowing. This is her at her most peaceful.'})">
+      <img src="photo_11.jpeg" alt="Estrella seated" />
+      <div class="gallery-caption">Warm and at peace.</div>
+    </div>
+
+    <!-- Outdoors red full body -->
+    <div class="gallery-item" onclick="openMemory({title:'The world is hers', text:'Head down, heart full, the whole world spread out in front of her.'})">
+      <img src="photo_12.jpeg" alt="Estrella outdoors" />
+      <div class="gallery-caption">The world is hers.</div>
+    </div>
+
+    <!-- Mirror black striped -->
+    <div class="gallery-item" onclick="openMemory({title:'Quiet strength', text:'Glasses on, shoulders back, quiet and powerful all at once.'})">
+      <img src="photo_13.jpeg" alt="Estrella in black" />
+      <div class="gallery-caption">Quiet and powerful.</div>
+    </div>
+
+    <!-- Purple hijab close -->
+    <div class="gallery-item" onclick="openMemory({title:'Those eyes', text:'She has eyes that make you want to say something meaningful.'})">
+      <img src="photo_14.jpeg" alt="Estrella close up" />
+      <div class="gallery-caption">Those eyes say everything.</div>
+    </div>
+
+    <!-- Sunglasses peace sign at work -->
+    <div class="gallery-item" onclick="openMemory({title:'Good vibes', text:'Shades on, peace sign up, she is pure good energy.'})">
+      <img src="photo_15.jpeg" alt="Estrella peace sign" />
+      <div class="gallery-caption">Pure good energy.</div>
+    </div>
+
+    <!-- Ray-Ban close smile -->
+    <div class="gallery-item" onclick="openMemory({title:'My favourite', text:'Ray-Bans and that half-smile. This is the one I keep coming back to.'})">
+      <img src="photo_16.jpeg" alt="Estrella in Ray-Bans" />
+      <div class="gallery-caption">My favourite view.</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S7 — OUR CONSTELLATION
+════════════════════════════════════════ -->
+<section id="s7">
+  <p class="section-label">— our constellation —</p>
+  <canvas id="constellation-canvas"></canvas>
+  <p class="constellation-hint">✦ &nbsp; tap the stars to find our memories &nbsp; ✦</p>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     S8 — FINALE
+════════════════════════════════════════ -->
+<section id="s8">
+  <canvas id="confetti-canvas"></canvas>
+  <div class="finale-inner">
+    <p class="finale-hbd reveal">Happy Birthday</p>
+    <p class="finale-names reveal">Eniola &nbsp;·&nbsp; Fifehanmi &nbsp;·&nbsp; Arike &nbsp;·&nbsp; Fatiah</p>
+    <h2 class="finale-name reveal">Estrella</h2>
+    <p class="finale-poem reveal">
+      You are my favourite star<br>
+      not because you shine the brightest,<br>
+      but because no matter how dark it gets,<br>
+      I always find my way<br>
+      by looking at you.
+    </p>
+    <p class="finale-signature reveal">With all of me &nbsp;·&nbsp; always.</p>
+  </div>
+</section>
+
+
+<!-- MEMORY POPUP -->
+<div id="memory-popup" onclick="closeMemory()">
+  <div class="memory-popup-inner" onclick="event.stopPropagation()">
+    <button class="popup-close" onclick="closeMemory()">✕</button>
+    <span class="popup-star">✦</span>
+    <p class="popup-title" id="popup-title">Memory</p>
+    <p class="popup-text"  id="popup-text">...</p>
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
