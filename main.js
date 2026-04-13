@@ -167,7 +167,7 @@ const memories = [
   { name: "The Beach",       text: "We sang Heavens together by the water. I will never forget that." },
   { name: "Your Faith",      text: "Watching you carry your faith so quietly reminded me that grace is real." },
   { name: "Your Strength",   text: "You carry mountains without making a sound. I see you." },
-  { name: "Her Smile",       text: "The smile that rewrites the whole sky." },
+  { name: "Your Smile",       text: "The smile that rewrites the whole sky." },
   { name: "Best Part",       text: "You are the best part. Of everything." },
   { name: "My Star",         text: "I always find my way by looking at you." },
 ];
